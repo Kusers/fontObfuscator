@@ -9,7 +9,7 @@ from src.model import common_response
 from src.upload import upload_to_oss, delete_file
 from src.utils import base64_binary
 
-app = Sanic()
+app = Sanic('ttf-server')
 
 
 @app.get('/')
