@@ -1,5 +1,8 @@
 import uuid
-
+import os
+import sys
+cur_path=os.path.abspath(os.path.dirname(__file__))
+sys.path.insert(0, cur_path+"/..")
 from sanic import Sanic
 from sanic.response import json, text
 
